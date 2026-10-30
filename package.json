@@ -19,12 +19,12 @@
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-router-dom": "^7.18.4",
-    "sirv": "^3.0.2",
-    "tailwindcss": "^4.3.3"
+    "sirv": "^3.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^6.1.1",
     "cross-env": "^10.1.0",
+    "tailwindcss": "^4.3.3",
     "vite": "^8.2.2"
   }
 }

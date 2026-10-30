@@ -10,6 +10,9 @@ import {
   ShieldCheck,
   Heart,
 } from 'lucide-react'
+import Banner from './Components/Banner'
+import Services from './Components/Services'
+import BookingProcess from './Components/BookingProcess'
 
 const links = [
   { label: 'Home', href: '#home' },
@@ -401,11 +404,14 @@ export default function App() {
       <Header />
       <main>
         <Hero />
+        <Banner />
+        <Services />
+        <BookingProcess />
         <About />
         <Values />
         <Contact />
       </main>
-      <Footer />
+      <Footer />  
     </>
   )
 }
