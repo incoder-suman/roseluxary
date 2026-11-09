@@ -12,14 +12,14 @@ const Services = () => {
       id: 1,
       title: 'Web Development',
       description: 'Modern, responsive websites tailored to your business.',
-      price: '₹9,999',
+      // price: '₹9,999',
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=85',
     },
     {
       id: 2,
       title: 'SEO Optimization',
       description: 'Improve search visibility and grow organic traffic.',
-      price: '₹4,999',
+      // price: '₹4,999',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=85',
     },
     {
@@ -223,15 +223,15 @@ const Services = () => {
                   {service.description}
                 </p>
 
-                <div className="mt-auto pt-6">
+                <div className=" pt-6">
                   <div className="border-t border-[#E8D8D0] pt-4">
-                    <p className="text-xs tracking-wide text-[#8B7770]">
+                    {/* <p className="text-xs tracking-wide text-[#8B7770]">
                       Starting at
-                    </p>
+                    </p> */}
 
-                    <p className="mt-1 font-serif text-2xl text-[#30221F]">
+                    {/* <p className="mt-1 font-serif text-2xl text-[#30221F]">
                       {service.price}
-                    </p>
+                    </p> */}
                   </div>
 
                   <button
@@ -239,7 +239,7 @@ const Services = () => {
                     onClick={() => handleBooking(service)}
                     className="mt-5 w-full border border-[#BD7D83] bg-[#BD7D83] px-4 py-3 text-xs font-medium uppercase tracking-[0.15em] text-white transition-colors duration-300 hover:border-[#30221F] hover:bg-[#30221F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#BD7D83]"
                   >
-                    Enquire Now <span aria-hidden="true">→</span>
+                    Book Now <span aria-hidden="true">→</span>
                   </button>
                 </div>
               </div>

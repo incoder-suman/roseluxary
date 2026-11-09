@@ -1,41 +1,33 @@
-
 import React from "react";
 
 export default function BookingProcess() {
   const steps = [
     {
       number: "01",
-      title: "Choose Your Service",
+      title: "Explore Services & Availability",
       description:
-        "Explore our services and choose the right solution for your business.",
+        "Begin your journey by exploring detailed services and availability. Discover the variety of refined experiences offered, ensuring timings align harmoniously with your schedule.",
       icon: "🎯",
     },
     {
       number: "02",
-      title: "Discuss Your Project",
+      title: "Connect with Ease",
       description:
-        "Share your goals, requirements, budget, and project expectations with us.",
+        "Reach out through your preferred channel—phone, WhatsApp, or email. Share a friendly message introducing yourself and discussing any specific preferences or requests to ensure a tailored experience.",
       icon: "💬",
     },
     {
       number: "03",
-      title: "Get Your Proposal",
+      title: "Confirm & Enjoy",
       description:
-        "Receive a customized strategy, transparent pricing, and project timeline.",
+        "Once details are discussed and finalized, lock in the date, time, and location for a seamless rendezvous. All that remains is to anticipate the memorable moments ahead.",
       icon: "📋",
-    },
-    {
-      number: "04",
-      title: "Start Your Project",
-      description:
-        "Approve the plan and let our experts bring your vision to life.",
-      icon: "🚀",
     },
   ];
 
-  const whatsappNumber = "YOUR_WHATSAPP_NUMBER";
+  const whatsappNumber = "919876543210"; // Replace with your actual number
   const message = encodeURIComponent(
-    "Hi WebInCoder! I would like to book a consultation for my project."
+    "Hi, I would like to make an enquiry regarding your luxury services."
   );
 
   return (
@@ -49,37 +41,34 @@ export default function BookingProcess() {
 
       <div className="relative mx-auto max-w-7xl">
         {/* Heading */}
-        <div className="mx-auto mb-5 max-w-3xl text-center">
+        <div className="mx-auto mb-12 max-w-3xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-[#B77980] bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#B77980]">
             <span className="h-2 w-2 rounded-full bg-[#B77980]" />
-            Simple & Hassle-Free
+            Simple &amp; Hassle-Free
           </span>
 
-          <h2 className="mt-6 text-3xl font-extrabold leading-tight tracking-tight text-[#25211F] sm:text-4xl lg:text-5xl">
+          <h2 className="mt-6 text-3xl font-extrabold leading-tight tracking-tight text-[#25211F] sm:text-4xl lg:text-5xl font-serif">
             How Our Booking
-            <span className="block text-[#B77980]">
+            <span className="block italic text-[#B77980]">
               Process Works
             </span>
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-gray-600 sm:text-lg">
-            Getting started with WebInCoder is simple. Follow these four
-            easy steps to turn your business ideas into reality.
+            Getting started is effortless. Follow these three simple steps to
+            begin your exclusive journey.
           </p>
         </div>
 
-        {/* Steps */}
-        <div className="relative grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {/* Connecting Line */}
-          <div className="absolute left-[12%] right-[12%] top-12 hidden border-t-2 border-dashed border-orange-300 lg:block" />
-
+        {/* Steps (Updated to 3 columns to match the 3 step items) */}
+        <div className="relative grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {steps.map((step) => (
             <div
               key={step.number}
               className="group relative rounded-3xl border border-orange-100 bg-white p-7 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#B77980] hover:shadow-xl"
             >
               {/* Number */}
-              <span className="absolute right-5 top-5 text-sm font-extrabold tracking-widest text-[#B77980]    ">
+              <span className="absolute right-5 top-5 text-sm font-extrabold tracking-widest text-[#B77980]">
                 {step.number}
               </span>
 
@@ -97,7 +86,7 @@ export default function BookingProcess() {
                 {step.description}
               </p>
 
-              <div className="mx-auto mt-6 h-1 w-12 rounded-full bg-[#B77980] transition-all duration-300 group-hover:w-20 group-hover:bg-[#B77980]" />
+              <div className="mx-auto mt-6 h-1 w-12 rounded-full bg-[#B77980] transition-all duration-300 group-hover:w-20" />
             </div>
           ))}
         </div>
@@ -109,16 +98,16 @@ export default function BookingProcess() {
           <div className="relative flex flex-col items-center justify-between gap-8 text-center lg:flex-row lg:text-left">
             <div className="max-w-2xl">
               <span className="text-sm font-semibold uppercase tracking-[0.2em] text-[#B77980]">
-                Let’s Work Together
+                Let’s Connect
               </span>
 
-              <h3 className="mt-3 text-2xl font-extrabold text-white sm:text-3xl lg:text-4xl">
-                Ready to Start Your Project?
+              <h3 className="mt-3 text-2xl font-extrabold text-white sm:text-3xl lg:text-4xl font-serif">
+                Ready to Experience Excellence?
               </h3>
 
               <p className="mt-4 text-sm leading-7 text-gray-300 sm:text-base">
-                Have an idea in mind? Let’s discuss your requirements and
-                find the perfect digital solution for your business.
+                Have specific preferences or inquiries in mind? Reach out today
+                and let us arrange your ideal experience.
               </p>
             </div>
 
@@ -126,9 +115,9 @@ export default function BookingProcess() {
               href={`https://wa.me/${whatsappNumber}?text=${message}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex shrink-0 items-center justify-center gap-3 rounded-full bg-[#B77980] px-8 py-4 font-bold text-white shadow-lg shadow-orange-950/20 transition-all duration-300 hover:-translate-y-1 hover:bg-orange-700"
+              className="inline-flex shrink-0 items-center justify-center gap-3 rounded-full bg-[#B77980] px-8 py-4 font-bold text-white shadow-lg shadow-orange-950/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#9F626B]"
             >
-              Book a Consultation
+              Make An Enquiry
               <span className="text-xl" aria-hidden="true">↗</span>
             </a>
           </div>

@@ -13,6 +13,8 @@ import {
 import Banner from './Components/Banner'
 import Services from './Components/Services'
 import BookingProcess from './Components/BookingProcess'
+import FloatingActions from './Components/FloatingActions'
+import LetsConnect from './Components/LetsConnect'
 
 const links = [
   { label: 'Home', href: '#home' },
@@ -273,16 +275,13 @@ function About() {
 
         <Reveal delay={0.12}>
           <p className="text-sm leading-8 text-[#786966] sm:text-base">
-            We believe a remarkable experience begins with thoughtful design,
-            clear communication and attention to the smallest details.
-            Roseluxary brings these principles together in one distinctive
-            digital destination.
+            The most formidable person who can fulfil your wishes and be the luxurious travel companion for your weekends or vacations internationally. Although if you are always invited to explore my services as an escort in Delhi if you are traveling to Delhi, but also put up a request for me to be your travel escort in Delhi or any other city of India.
           </p>
           <a
             href="#values"
             className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-[#9c6469] transition hover:gap-3"
           >
-            What we stand for <ArrowUpRight size={16} />
+            {/* What we stand for <ArrowUpRight size={16} /> */}
           </a>
         </Reveal>
       </div>
@@ -403,13 +402,15 @@ export default function App() {
     <>
       <Header />
       <main>
-        <Hero />
+        <FloatingActions/>
+        {/* <Hero /> */}
         <Banner />
         <Services />
         <BookingProcess />
         <About />
         <Values />
-        <Contact />
+        {/* <Contact /> */}
+        <LetsConnect/>
       </main>
       <Footer />  
     </>
