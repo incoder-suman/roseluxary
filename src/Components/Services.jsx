@@ -242,26 +242,26 @@ const Services = () => {
                     </p> */}
                   </div>
 
-                  {/* <button
+                  <button
                     type="button"
                     onClick={() => handleBooking(service)}
                     className="mt-5 w-full border border-[#BD7D83] bg-[#BD7D83] px-4 py-3 text-xs font-medium uppercase tracking-[0.15em] text-white transition-colors duration-300 hover:border-[#30221F] hover:bg-[#30221F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#BD7D83]"
                   >
                     Book Now <span aria-hidden="true">→</span>
-                  </button> */}
+                  </button>
 
                   {/* Book Now Button */}
-      <button
+      {/* <button
         type="button"
         onClick={() => setIsOpen(true)}
         className="rounded-md bg-[#B77980] px-8 py-3 w-full text-sm font-semibold uppercase tracking-wider text-white transition hover:bg-[#9F626B]"
       >
         Book Now
-      </button>
+      </button> */}
 
 
 {/* Popup Modal */}
-      {isOpen && (
+      {/* {isOpen && (
         <div
           className="fixed inset-0 z-[999] flex items-center justify-center bg-black/70 px-4 backdrop-blur-sm"
           onClick={() => setIsOpen(false)}
@@ -269,9 +269,9 @@ const Services = () => {
           <div
             className="relative w-full max-w-md rounded-xl bg-white p-8 text-center shadow-2xl"
             onClick={(e) => e.stopPropagation()}
-          >
+          > */}
             {/* Close Button */}
-            <button
+            {/* <button
               type="button"
               onClick={() => setIsOpen(false)}
               className="absolute right-4 top-3 text-2xl text-gray-500 transition hover:text-black"
@@ -290,13 +290,13 @@ const Services = () => {
 
             <p className="mt-3 text-sm leading-6 text-gray-500">
               Choose your preferred platform to connect with our team.
-            </p>
+            </p> */}
 
             {/* Contact Buttons */}
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            {/* <div className="mt-8 flex flex-col gap-3 sm:flex-row"> */}
 
               {/* WhatsApp */}
-              <a
+              {/* <a
                 href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -305,10 +305,10 @@ const Services = () => {
               >
                 <span className="text-lg">◉</span>
                 WhatsApp
-              </a>
+              </a> */}
 
               {/* Telegram */}
-              <a
+              {/* <a
                 href={`https://t.me/${telegramUsername}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -330,7 +330,7 @@ const Services = () => {
             </button>
           </div>
         </div>
-      )}
+      )} */}
     
                   
 
