@@ -7,6 +7,14 @@ const Services = () => {
   const lastTimeRef = useRef(0);
   const [isPaused, setIsPaused] = useState(false);
 
+    const [isOpen, setIsOpen] = useState(false);
+
+  const whatsappNumber = "919876543210";
+  const telegramUsername = "yourusername";
+
+  const message = "Hi WebInCoder, I want to book your services.";
+
+
   const services = [
     {
       id: 1,
@@ -242,13 +250,95 @@ const Services = () => {
                     Book Now <span aria-hidden="true">→</span>
                   </button> */}
 
+                  {/* Book Now Button */}
+      <button
+        type="button"
+        onClick={() => setIsOpen(true)}
+        className="rounded-md bg-[#B77980] px-8 py-3 w-full text-sm font-semibold uppercase tracking-wider text-white transition hover:bg-[#9F626B]"
+      >
+        Book Now
+      </button>
+
+
+{/* Popup Modal */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-[999] flex items-center justify-center bg-black/70 px-4 backdrop-blur-sm"
+          onClick={() => setIsOpen(false)}
+        >
+          <div
+            className="relative w-full max-w-md rounded-xl bg-white p-8 text-center shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button */}
+            <button
+              type="button"
+              onClick={() => setIsOpen(false)}
+              className="absolute right-4 top-3 text-2xl text-gray-500 transition hover:text-black"
+              aria-label="Close popup"
+            >
+              ×
+            </button>
+
+            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#B77980]">
+              Let's Get Started
+            </span>
+
+            <h2 className="mt-3 text-2xl font-bold text-[#25211F]">
+              Book Your Service
+            </h2>
+
+            <p className="mt-3 text-sm leading-6 text-gray-500">
+              Choose your preferred platform to connect with our team.
+            </p>
+
+            {/* Contact Buttons */}
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+
+              {/* WhatsApp */}
+              <a
+                href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+                className="flex flex-1 items-center justify-center gap-2 rounded-md bg-[#25D366] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#1DA851]"
+              >
+                <span className="text-lg">◉</span>
+                WhatsApp
+              </a>
+
+              {/* Telegram */}
+              <a
+                href={`https://t.me/${telegramUsername}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+                className="flex flex-1 items-center justify-center gap-2 rounded-md bg-[#229ED9] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#168AC4]"
+              >
+                <span className="text-lg">➤</span>
+                Telegram
+              </a>
+
+            </div>
+
+            <button
+              type="button"
+              onClick={() => setIsOpen(false)}
+              className="mt-6 text-xs font-medium text-gray-400 transition hover:text-gray-700"
+            >
+              Maybe Later
+            </button>
+          </div>
+        </div>
+      )}
+    
                   
 
 
-<div className="grid w-full grid-cols-2 gap-3">
+{/* <div className="grid w-full grid-cols-2 gap-3"> */}
 
   {/* WhatsApp Button */}
-  <button
+  {/* <button
     type="button"
     onClick={() => {
       const message =
@@ -266,10 +356,10 @@ const Services = () => {
     <span className="text-sm font-normal transition-transform duration-300 group-hover:translate-x-1">
       →
     </span>
-  </button>
+  </button> */}
 
   {/* Telegram Button */}
-  <button
+  {/* <button
     type="button"
     onClick={() => {
       window.open(
@@ -286,7 +376,7 @@ const Services = () => {
     </span>
   </button>
 
-</div>
+</div> */}
 
 
 
