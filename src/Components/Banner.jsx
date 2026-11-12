@@ -185,7 +185,7 @@ export default function Banner() {
                     />
                   </div>
 
-                  <button
+                  {/* <button
                     type="submit"
                     className="group flex w-full items-center justify-center gap-2 bg-[#B77980] py-3 text-xs font-semibold uppercase tracking-widest text-white transition duration-300 hover:bg-[#9F626B]"
                   >
@@ -193,7 +193,41 @@ export default function Banner() {
                     <span className="transition-transform group-hover:translate-x-1">
                       →
                     </span>
-                  </button>
+                  </button> */}
+
+                  <div className="flex flex-col gap-3 sm:flex-row">
+
+  {/* WhatsApp Button */}
+  <button
+    type="button"
+    onClick={() => {
+      const message = "Hi WebInCoder, I would like to enquire about your services.";
+      window.open(
+        `https://wa.me/919876543210?text=${encodeURIComponent(message)}`,
+        "_blank"
+      );
+    }}
+    className="group flex flex-1 items-center justify-center gap-2 bg-[#25D366] py-3 text-xs font-semibold uppercase tracking-widest text-white transition duration-300 hover:bg-[#1DA851]"
+  >
+    WhatsApp
+    <span className="transition-transform group-hover:translate-x-1">→</span>
+  </button>
+
+  {/* Telegram Button */}
+  <button
+    type="button"
+    onClick={() => {
+      window.open("https://t.me/yourusername", "_blank");
+    }}
+    className="group flex flex-1 items-center justify-center gap-2 bg-[#229ED9] py-3 text-xs font-semibold uppercase tracking-widest text-white transition duration-300 hover:bg-[#168AC4]"
+  >
+    Telegram
+    <span className="transition-transform group-hover:translate-x-1">→</span>
+  </button>
+
+</div>
+
+                  
                 </form>
               )}
             </div>

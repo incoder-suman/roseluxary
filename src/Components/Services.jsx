@@ -234,13 +234,63 @@ const Services = () => {
                     </p> */}
                   </div>
 
-                  <button
+                  {/* <button
                     type="button"
                     onClick={() => handleBooking(service)}
                     className="mt-5 w-full border border-[#BD7D83] bg-[#BD7D83] px-4 py-3 text-xs font-medium uppercase tracking-[0.15em] text-white transition-colors duration-300 hover:border-[#30221F] hover:bg-[#30221F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#BD7D83]"
                   >
                     Book Now <span aria-hidden="true">→</span>
-                  </button>
+                  </button> */}
+
+                  
+
+
+<div className="grid w-full grid-cols-2 gap-3">
+
+  {/* WhatsApp Button */}
+  <button
+    type="button"
+    onClick={() => {
+      const message =
+        "Hi WebInCoder, I would like to enquire about your services.";
+
+      window.open(
+        `https://wa.me/919876543210?text=${encodeURIComponent(message)}`,
+        "_blank",
+        "noopener,noreferrer"
+      );
+    }}
+    className="group flex h-12 w-full items-center justify-center gap-1 bg-[#25D366] px-1 text-[10px] font-semibold leading-none tracking-[0.07em] text-white transition-all duration-300 hover:bg-[#1DA851] sm:text-xs sm:tracking-[0.09em]"
+  >
+    <span>WHATSAPP</span>
+    <span className="text-sm font-normal transition-transform duration-300 group-hover:translate-x-1">
+      →
+    </span>
+  </button>
+
+  {/* Telegram Button */}
+  <button
+    type="button"
+    onClick={() => {
+      window.open(
+        "https://t.me/yourusername",
+        "_blank",
+        "noopener,noreferrer"
+      );
+    }}
+    className="group flex h-12 w-full items-center justify-center gap-1 bg-[#229ED9] px-1 text-[10px] font-semibold leading-none tracking-[0.07em] text-white transition-all duration-300 hover:bg-[#168AC4] sm:text-xs sm:tracking-[0.09em]"
+  >
+    <span>TELEGRAM</span>
+    <span className="text-sm font-normal transition-transform duration-300 group-hover:translate-x-1">
+      →
+    </span>
+  </button>
+
+</div>
+
+
+
+
                 </div>
               </div>
             </article>
