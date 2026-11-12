@@ -14,7 +14,7 @@
     "@tailwindcss/vite": "^4.3.3",
     "compression": "^1.8.1",
     "express": "^5.2.1",
-    "lucide-react": "^1.59.0",
+    "lucide-react": "^1.72.0",
     "motion": "^14.4.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",

@@ -15,6 +15,8 @@ import Services from './Components/Services'
 import BookingProcess from './Components/BookingProcess'
 import FloatingActions from './Components/FloatingActions'
 import LetsConnect from './Components/LetsConnect'
+import Scrolling from './Components/Scrolling'
+import FooterR from './Components/FooterR'
 
 const links = [
   { label: 'Home', href: '#home' },
@@ -405,14 +407,17 @@ export default function App() {
         <FloatingActions/>
         {/* <Hero /> */}
         <Banner />
+        <Scrolling/>
+        {/* <Scrolling/> */}
         <Services />
         <BookingProcess />
         <About />
         <Values />
-        {/* <Contact /> */}
-        <LetsConnect/>
+        <Contact />
+        {/* <LetsConnect/> */}
       </main>
-      <Footer />  
+      {/* <Footer />   */}
+      <FooterR/>
     </>
   )
 }
