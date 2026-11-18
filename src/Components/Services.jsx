@@ -12,44 +12,114 @@ const Services = () => {
   const whatsappNumber = "919876543210";
   const telegramUsername = "yourusername";
 
-  const message = "Hi WebInCoder, I want to book your services.";
+  const message = "Hi Rose Luxary, I want to book your services.";
 
 
   const services = [
     {
       id: 1,
-      title: 'Web Development',
-      description: 'Modern, responsive websites tailored to your business.',
+      title: 'Bachelor Party Escorts',
+      description: 'Professional adult companions for bachelor parties and private celebrations, with a focus on respectful interactions and memorable experiences.',
       // price: '₹9,999',
-      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=85',
+      image: '/service-3.png',
     },
     {
       id: 2,
-      title: 'SEO Optimization',
-      description: 'Improve search visibility and grow organic traffic.',
+      title: 'Business Companions',
+      description: 'Meet professional companions for business dinners, corporate events, social gatherings and networking occasions.',
       // price: '₹4,999',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=85',
+      image: 'service-2.png',
     },
     {
       id: 3,
-      title: 'UI/UX Design',
-      description: 'Beautiful and user-friendly digital experiences.',
-      price: '₹6,999',
-      image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1000&q=85',
+      title: 'Busty Escorts',
+      description: 'Explore profiles of adult companions with distinctive personalities and individual styles to suit your preferences.',
+      // price: '₹6,999',
+      image: 'service-14.png',
     },
     {
       id: 4,
-      title: 'Digital Marketing',
-      description: 'Strategic campaigns to grow your business online.',
-      price: '₹7,999',
-      image: 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=1000&q=85',
+      title: 'College Girl Escorts',
+      description: 'Discover verified adult companions aged 18 or above who offer friendly company for social outings and private events.',
+      // price: '₹7,999',
+      image: 'service-1.png',
     },
     {
       id: 5,
-      title: 'Content Marketing',
-      description: 'Engaging content that connects with your audience.',
+      title: 'Female Pornstar Job',
+      description: 'Explore adult entertainment performer opportunities for verified applicants aged 18 or above, with transparent terms and informed consent.',
+      // price: '₹3,999',
+      image: 'service-4.png',
+    },
+    {
+      id: 6,
+      title: 'Foreign Escorts',
+      description: 'Discover international adult companions from different backgrounds and cultures for social occasions and private engagements.',
+      // price: '₹9,999',
+      image: '/service-5.png',
+    },
+    {
+      id: 7,
+      title: 'Housewife Escorts',
+      description: 'Browse profiles of independent adult women offering companionship for social outings and private occasions.',
+      // price: '₹4,999',
+      image: 'service-6.png',
+    },
+    {
+      id: 8,
+      title: 'Incall Escorts',
+      description: 'Learn about scheduled appointments at a companion designated location, subject to availability and agreed arrangements.',
+      // price: '₹6,999',
+      image: 'service-7.png',
+    },
+    {
+      id: 9,
+      title: 'Influencer Escort',
+      description: 'Connect with adult influencers and social personalities for events, public appearances and social engagements.',
+      // price: '₹7,999',
+      image: 'service-8.png',
+    },
+    {
+      id: 10,
+      title: 'Lesbian Escorts',
+      description: 'Explore profiles of adult women offering companionship for women seeking female company in a respectful environment.',
+      // price: '₹3,999',
+      image: 'service-9.png',
+    },
+    {
+      id: 11,
+      title: 'Outcall Escorts',
+      description: 'Arrange a meeting at your preferred location, subject to availability, safety requirements and prior confirmation.',
+      // price: '₹9,999',
+      image: '/service-15.png',
+    },
+    {
+      id: 12,
+      title: 'Pool Party Escorts',
+      description: 'Find adult companions for pool parties, private celebrations and exclusive social gatherings.',
+      // price: '₹4,999',
+      image: 'service-11.png',
+    },
+    {
+      id: 13,
+      title: 'Russian Escorts',
+      description: 'Explore profiles of Russian adult companions and learn about their individual backgrounds, interests and availability.',
+      // price: '₹6,999',
+      image: 'service-12.png',
+    },
+    {
+      id: 14,
+      title: 'Sugar Babies',
+      description: 'Discover adult companionship profiles with transparent expectations, mutual respect and clearly communicated arrangements.',
+      // price: '₹7,999',
+      image: 'service-13.png',
+    },
+    {
+      id: 15,
+      title: 'Travel Companions',
+      description: 'Find adult companions for holidays, business trips, sightseeing and other travel-related social experiences.',
       price: '₹3,999',
-      image: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1000&q=85',
+      image: 'service-10.png',
     },
   ];
 
@@ -247,7 +317,7 @@ const Services = () => {
                     onClick={() => handleBooking(service)}
                     className="mt-5 w-full border border-[#BD7D83] bg-[#BD7D83] px-4 py-3 text-xs font-medium uppercase tracking-[0.15em] text-white transition-colors duration-300 hover:border-[#30221F] hover:bg-[#30221F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#BD7D83]"
                   >
-                    Book Now <span aria-hidden="true">→</span>
+                    Explore More <span aria-hidden="true">→</span>
                   </button>
 
                   {/* Book Now Button */}
@@ -387,9 +457,9 @@ const Services = () => {
           ))}
         </div>
 
-        <p className="mt-5 text-center text-xs tracking-wide text-[#8B7770]">
+        {/* <p className="mt-5 text-center text-xs tracking-wide text-[#8B7770]">
           Thoughtfully designed. Strategically delivered.
-        </p>
+        </p> */}
         
       </div>
     </section>

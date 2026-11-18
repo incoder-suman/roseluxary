@@ -1,57 +1,26 @@
+
 import React from "react";
 
 const actions = [
   {
-    id: "find-school",
-    title: "Telegtam",
-    color: "#38AADC", // Sky Blue
-    link: "/find-school",
+    id: "telegram",
+    title: "Telegram",
+    color: "#229ED9",
+    link: "https://t.me/yourusername",
     icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" className="h-9 w-9">
-        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />
+      <svg viewBox="0 0 24 24" width="25" height="25" fill="white">
+        <path d="M21.9 3.2 18.7 20c-.2 1.2-.9 1.5-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L6.1 13.6 1.2 12c-1.1-.3-1.1-1 .2-1.5L20.5 3c.9-.3 1.7.2 1.4 1.2Z" />
       </svg>
     ),
   },
-  // {
-  //   id: "admissions",
-  //   title: "On Call",
-  //   color: "#FA9D49", // Warm Orange
-  //   link: "/admissions",
-  //   icon: (
-  //     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-9 w-9">
-  //       <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-  //       <polyline points="14 2 14 8 20 8" />
-  //       <line x1="16" y1="13" x2="8" y2="13" />
-  //       <line x1="16" y1="17" x2="8" y2="17" />
-  //       <polyline points="10 9 9 9 8 9" />
-  //       <path d="M10.4 12.6l1.2 1.2 2.4-2.4" />
-  //     </svg>
-  //   ),
-  // },
-//   {
-//     id: "franchise",
-//     title: "Franchise",
-//     color: "#67B5AC", // Mint / Teal
-//     link: "/franchise",
-//     icon: (
-//       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="h-9 w-9">
-//         <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
-//         <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
-//         <line x1="6" y1="1" x2="6" y2="4" />
-//         <line x1="10" y1="1" x2="10" y2="4" />
-//         <line x1="14" y1="1" x2="14" y2="4" />
-//       </svg>
-//     ),
-//   },
   {
     id: "whatsapp",
     title: "WhatsApp",
-    color: "#6ac767", // Blue Slate
+    color: "#25D366",
     link: "https://wa.me/919876543210",
-    external: true,
     icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" className="h-9 w-9">
-        <path d="M12.011 2c-5.506 0-9.989 4.478-9.99 9.984a9.94 9.94 0 0 0 1.333 4.993L2 22l5.233-1.237a9.96 9.96 0 0 0 4.777 1.221h.005c5.505 0 9.988-4.478 9.989-9.984a9.96 9.96 0 0 0-2.92-7.062A9.92 9.92 0 0 0 12.011 2zm5.825 14.161c-.247.696-1.444 1.328-1.996 1.389-.515.056-1.176.08-1.895-.15-1.156-.37-2.612-1.077-3.805-2.27-1.189-1.188-1.896-2.64-2.266-3.797-.23-.718-.206-1.378-.15-1.894.06-.552.693-1.748 1.389-1.995.228-.081.434-.055.597.108.175.176.592.836.786 1.153.078.128.096.255.018.397-.084.153-.162.292-.294.432-.132.14-.247.24-.367.373-.105.117-.118.232-.016.41.227.397.72 1.054 1.365 1.7.647.646 1.303 1.139 1.7 1.366.177.102.292.089.409-.016.133-.12.233-.235.373-.367.14-.132.279-.21.432-.294.142-.078.269-.06.397.018.317.194.977.611 1.153.786.163.163.189.369.108.597z" />
+      <svg viewBox="0 0 24 24" width="25" height="25" fill="white">
+        <path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.2 1.6 6L0 24l6.3-1.7a12 12 0 0 0 5.7 1.4h.1c6.5 0 11.8-5.3 11.8-11.9 0-3.1-1.2-6-3.4-8.3ZM12 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 0 1-1.5-5.2C2.2 6.5 6.6 2.1 12 2.1c2.6 0 5.1 1 7 2.9a9.8 9.8 0 0 1 2.9 7c0 5.4-4.4 9.7-9.9 9.7Zm5.4-7.3c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.8 4.3.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.2-.3-.3-.6-.4Z" />
       </svg>
     ),
   },
@@ -59,50 +28,33 @@ const actions = [
 
 export default function SideNavTabs() {
   return (
-    <div className="fixed right-0 top-1/2 z-[9999] flex -translate-y-1/2 flex-col gap-1.5">
+    <div className="fixed right-4 top-1/2 z-[99999] flex -translate-y-1/2 flex-col items-end gap-4">
       {actions.map((item) => (
         <a
           key={item.id}
           href={item.link}
-          target={item.external ? "_blank" : undefined}
-          rel={item.external ? "noopener noreferrer" : undefined}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={item.title}
           style={{ backgroundColor: item.color }}
           className="
-            group relative flex h-[115px] w-[50px]
-            items-center justify-center
-            overflow-hidden rounded-l-2xl text-white shadow-md
-            transition-all duration-300 ease-in-out
-            hover:w-[125px] hover:shadow-xl
-            focus-within:w-[125px]
+            group flex h-[60px] w-[60px] min-w-[60px]
+            items-center justify-start gap-3
+            overflow-hidden rounded-full
+            pl-[17px] text-white
+            shadow-lg shadow-black/20
+            transition-[width,box-shadow] duration-300 ease-in-out
+            hover:w-[165px]
+            focus-visible:w-[165px]
           "
         >
-          {/* Collapsed State: Vertical Text Only */}
-          <span
-            className="
-              whitespace-nowrap text-base font-semibold tracking-wide
-              [writing-mode:vertical-rl] rotate-180
-              transition-opacity duration-200
-              group-hover:opacity-0 group-focus-within:opacity-0
-            "
-          >
-            {item.title}
+          <span className="flex h-[26px] w-[26px] shrink-0 items-center justify-center">
+            {item.icon}
           </span>
 
-          {/* Expanded State: Icon + Horizontal Text */}
-          <div
-            className="
-              absolute inset-0 flex flex-col items-center justify-center gap-1
-              px-2 opacity-0 transition-opacity duration-300
-              group-hover:opacity-100 group-focus-within:opacity-100
-            "
-          >
-            <span className="shrink-0 transition-transform duration-300 group-hover:scale-105">
-              {item.icon}
-            </span>
-            <span className="whitespace-nowrap text-center text-xs font-bold leading-tight tracking-wide">
-              {item.title}
-            </span>
-          </div>
+          <span className="whitespace-nowrap text-sm font-semibold opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">
+            {item.title}
+          </span>
         </a>
       ))}
     </div>

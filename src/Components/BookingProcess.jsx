@@ -92,36 +92,48 @@ export default function BookingProcess() {
         </div>
 
         {/* CTA Section */}
-        <div className="relative mt-16 overflow-hidden rounded-3xl bg-[#25211F] px-7 py-10 sm:px-10 lg:px-14 lg:py-12">
-          <div className="pointer-events-none absolute -right-10 -top-20 h-64 w-64 rounded-full border-[35px] border-white/5" />
+<div
+  className="relative mt-16 overflow-hidden rounded-3xl bg-cover bg-center bg-no-repeat px-7 py-10 sm:px-10 lg:px-14 lg:py-12"
+  style={{
+    backgroundImage: "url('/Banner-1.png')",
+  }}
+>
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-black/65" />
 
-          <div className="relative flex flex-col items-center justify-between gap-8 text-center lg:flex-row lg:text-left">
-            <div className="max-w-2xl">
-              <span className="text-sm font-semibold uppercase tracking-[0.2em] text-[#B77980]">
-                Let’s Connect
-              </span>
+  {/* Decorative circle */}
+  <div className="pointer-events-none absolute -right-10 -top-20 h-64 w-64 rounded-full border-[35px] border-white/5" />
 
-              <h3 className="mt-3 text-2xl font-extrabold text-white sm:text-3xl lg:text-4xl font-serif">
-                Ready to Experience Excellence?
-              </h3>
+  {/* Content */}
+  <div className="relative z-10 flex flex-col items-center justify-between gap-8 text-center lg:flex-row lg:text-left">
 
-              <p className="mt-4 text-sm leading-7 text-gray-300 sm:text-base">
-                Have specific preferences or inquiries in mind? Reach out today
-                and let us arrange your ideal experience.
-              </p>
-            </div>
+    <div className="max-w-2xl">
+      <span className="text-sm font-semibold uppercase tracking-[0.2em] text-[#B77980]">
+        Let’s Connect
+      </span>
 
-            <a
-              href={`https://wa.me/${whatsappNumber}?text=${message}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex shrink-0 items-center justify-center gap-3 rounded-full bg-[#B77980] px-8 py-4 font-bold text-white shadow-lg shadow-orange-950/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#9F626B]"
-            >
-              Make An Enquiry
-              <span className="text-xl" aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </div>
+      <h3 className="mt-3 font-serif text-2xl font-extrabold text-white sm:text-3xl lg:text-4xl">
+        Ready to Experience Excellence?
+      </h3>
+
+      <p className="mt-4 text-sm leading-7 text-gray-200 sm:text-base">
+        Have specific preferences or inquiries in mind? Reach out today
+        and let us arrange your ideal experience.
+      </p>
+    </div>
+
+    <a
+      href={`https://wa.me/${whatsappNumber}?text=${message}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex shrink-0 items-center justify-center gap-3 rounded-full bg-[#B77980] px-8 py-4 font-bold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-[#9F626B]"
+    >
+      Make An Enquiry
+      <span className="text-xl" aria-hidden="true">↗</span>
+    </a>
+
+  </div>
+</div>
       </div>
     </section>
   );

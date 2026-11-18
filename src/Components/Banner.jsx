@@ -29,7 +29,7 @@ export default function Banner() {
       className="relative min-h-[680px] overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85')",
+          "url('/Banner-2.png')",
       }}
     >
       {/* Background Overlay */}

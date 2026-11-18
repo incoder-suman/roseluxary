@@ -3,12 +3,21 @@ import React from "react";
 
 export default function Scrolling() {
   const services = [
-    "WEB DEVELOPMENT",
-    "SEO OPTIMIZATION",
-    "UI/UX DESIGN",
-    "DIGITAL GROWTH",
-    "BRAND STRATEGY",
-    "CREATIVE SOLUTIONS"
+    "Bachelor Party Escorts",
+    "Business Companions",
+    "Busty Escorts",
+    "College Girl Escorts",
+    "Female Pornstar Job",
+    "Foreign Escorts",
+    "Housewife Escorts",
+    "Incall Escorts",
+    "Influencer Escort",
+    "Lesbian Escorts",
+    "Outcall Escorts",
+    "Pool Party Escorts",
+    "Russian Escorts",
+    "Sugar Babies",
+    "Travel Companions"
   ];
 
   return (
@@ -18,7 +27,7 @@ export default function Scrolling() {
         className="absolute inset-0 scale-105 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2000&q=85')"
+            "url('Banner-1.png')"
         }}
       />
 
@@ -76,9 +85,9 @@ export default function Scrolling() {
         <div className="mt-12 flex items-center justify-center gap-3 px-5 text-center">
           <span className="h-2 w-2 rounded-full bg-[#B77980] shadow-[0_0_12px_#B77980]" />
 
-          <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/70 sm:text-sm">
+          {/* <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/70 sm:text-sm">
             Creative Thinking. Smart Technology. Measurable Growth.
-          </p>
+          </p> */}
         </div>
       </div>
 
