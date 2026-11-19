@@ -79,7 +79,7 @@ export default function FooterR() {
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
     { name: "Services", href: "/services" },
-    { name: "Portfolio", href: "/Join Us" },
+    { name: "Join Us", href: "/portfolio" },
     { name: "Contact", href: "/contact" },
   ];
 
