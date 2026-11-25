@@ -28,7 +28,7 @@ const actions = [
 
 export default function SideNavTabs() {
   return (
-    <div className="fixed right-4 top-1/2 z-[99999] flex -translate-y-1/2 flex-col items-end gap-4">
+    <div className="fixed bottom-6 right-4 z-[99999] flex flex-col items-end gap-3 sm:bottom-8 sm:right-6">
       {actions.map((item) => (
         <a
           key={item.id}
